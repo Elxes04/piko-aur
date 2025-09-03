@@ -8,21 +8,21 @@ url="https://github.com/Elxes04/piko"
 license=('MIT')
 depends=('glibc')
 makedepends=('rust' 'cargo')
-source=("$pkgname-$pkgver.tar.gz::https://github.com/Elxes04/piko/archive/v$pkgver.tar.gz")
+source=("$pkgname-$pkgver.tar.gz::https://github.com/Elxes04/Piko/archive/main.tar.gz")
 sha256sums=('SKIP')
 
 build() {
-  cd "$pkgname-$pkgver"
+  cd "Piko-main"
   cargo build --release --locked
 }
 
 check() {
-  cd "$pkgname-$pkgver"
+  cd "Piko-main"
   cargo test --release --locked
 }
 
 package() {
-  cd "$pkgname-$pkgver"
+  cd "Piko-main"
   
   # Install binary
   install -Dm755 "target/release/$pkgname" "$pkgdir/usr/bin/$pkgname"
