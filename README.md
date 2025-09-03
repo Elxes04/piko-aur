@@ -25,4 +25,3 @@ This package is automatically updated when new versions of Piko are released.
 ## Support
 
 For issues with the package, please open an issue on the [main Piko repository](https://github.com/Elxes04/piko).
-EOF
