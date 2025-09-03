@@ -1,0 +1,15 @@
+pkgbase = piko
+	pkgdesc = A minimal, customizable system information tool written in Rust — inspired by Neofetch
+	pkgver = 1.1.0
+	pkgrel = 1
+	url = https://github.com/Elxes04/piko
+	arch = x86_64
+	arch = aarch64
+	license = MIT
+	depends = glibc
+	makedepends = rust
+	makedepends = cargo
+	source = piko-1.1.0.tar.gz::https://github.com/Elxes04/piko/archive/v1.1.0.tar.gz
+	sha256sums = SKIP
+
+pkgname = piko
